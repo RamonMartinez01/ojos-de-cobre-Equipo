@@ -40,7 +40,6 @@ export const SolutionComingSoon = () => {
         </h1>
         
         <p className="text-lg text-slate-400 mb-12">
-          Nuestro modelo está analizando la telemetría de Copernicus. La solución final estará disponible muy pronto.
         </p>
 
        {/* Contenedor del Carrusel de Alta Velocidad */}

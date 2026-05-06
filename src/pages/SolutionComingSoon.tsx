@@ -1,7 +1,7 @@
 // src/pages/SolutionComingSoon.tsx
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowLeft, Satellite } from 'lucide-react';
+import { ArrowLeft } from 'lucide-react';
 
 export const SolutionComingSoon = () => {
   const [currentIndex, setCurrentIndex] = useState(0);

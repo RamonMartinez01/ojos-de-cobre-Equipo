@@ -1,5 +1,6 @@
 // src/sections/Hero.tsx
 import { ArrowRight, Eye, FileText, Satellite } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export const Hero = () => {
   return (
@@ -34,13 +35,14 @@ export const Hero = () => {
 
         {/* Botones de Acción (CTAs) */}
         <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">
-          <a
-            href="#approach"
+          {/* Bot+on hacia la página en construcción */}
+          <Link
+            to="/solucion"
             className="group flex items-center justify-center gap-2 rounded-lg bg-[#38BDF8] px-6 py-3 font-semibold text-[#0F172A] transition-all hover:bg-[#7DD3FC] hover:shadow-[0_0_20px_rgba(56,189,248,0.25)]"
           >
             Conoce la Solución
             <ArrowRight size={18} className="transition-transform group-hover:translate-x-1" />
-          </a>
+          </Link>
 
           <a
             href="#team"

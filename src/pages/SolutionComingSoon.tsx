@@ -29,11 +29,6 @@ export const SolutionComingSoon = () => {
       
       {/* Contenedor Principal */}
       <div className="max-w-2xl w-full text-center">
-        
-        {/* Icono animado superior */}
-        <div className="mx-auto mb-8 flex h-20 w-20 items-center justify-center rounded-full bg-[#38BDF8]/10 animate-pulse">
-          <Satellite size={40} className="text-[#38BDF8]" />
-        </div>
 
         <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl mb-4">
           Proyecto en  <span className="bg-gradient-to-r from-[#38BDF8] to-[#34D399] bg-clip-text text-transparent">Construcción</span>.

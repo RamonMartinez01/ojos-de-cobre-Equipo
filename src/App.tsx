@@ -1,29 +1,27 @@
+// src/App.tsx
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Navbar } from './components/layout/Navbar';
-import { Hero } from './sections/Hero';
-import { ProjectMember } from './sections/ProjectMember';
-import { NewSection } from './sections/NewSection';
+import { Home } from './pages/Home';
+import { Blog } from './pages/Blog';
+import { SinglePost } from './pages/SinglePost';
+import { SolutionComingSoon } from './pages/SolutionComingSoon';
 
-function App() {
+export const App = () => {
   return (
-    /* Aplicamos el fondo oscuro y los colores base aquí */
-    <div className="min-h-screen bg-[#0F111A] text-slate-200 selection:bg-[#9191E6]/30">
-      <Navbar />
-      
-      <main>
-        <Hero />
-        
-        {/* Un contenedor para dar aire a las secciones de contenido */}
-        <div className="max-w-5xl mx-auto px-6 space-y-32 pb-20">
-          <ProjectMember />
-          <NewSection />
-        </div>
-      </main>
-
-      <footer className="py-10 text-center text-sm text-slate-500 border-t border-[#555990]/10">
-        © {new Date().getFullYear()} — Footer de nuestro projecto
-      </footer>
-    </div>
-  )
-}
+    <Router>
+      <div className="min-h-screen bg-[#0F172A] selection:bg-[#38BDF8]/30">
+        <Navbar />
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/avances" element={<Blog />} />
+            <Route path="/avances/:id" element={<SinglePost />} />
+            <Route path="/solucion" element={<SolutionComingSoon />} />
+          </Routes>
+        </main>
+      </div>
+    </Router>
+  );
+};
 
 export default App

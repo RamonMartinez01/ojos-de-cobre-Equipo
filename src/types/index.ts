@@ -33,3 +33,13 @@ export interface TeamMember {
   location?: string;       // Relevante para HackathonLAC (equipos distribuidos)
   isLead?: boolean;       // Reemplaza 'active'. Marca si es líder de equipo/área.
 }
+
+export interface BlogPost {
+  id: string;
+  title: string;
+  date: string;
+  author: string;
+  summary: string;
+  tags: string[];
+  content: string[];
+}
